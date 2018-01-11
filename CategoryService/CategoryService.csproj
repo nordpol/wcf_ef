@@ -58,11 +58,35 @@
     <Compile Include="CategoryContext.cs" />
     <Compile Include="CategoryService.cs" />
     <Compile Include="ICategory.cs" />
+    <Compile Include="Migrations\201801112057510_InitialCreate.cs" />
+    <Compile Include="Migrations\201801112057510_InitialCreate.Designer.cs">
+      <DependentUpon>201801112057510_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801112103458_Initial.cs" />
+    <Compile Include="Migrations\201801112103458_Initial.Designer.cs">
+      <DependentUpon>201801112103458_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801112109496_Initial1.cs" />
+    <Compile Include="Migrations\201801112109496_Initial1.Designer.cs">
+      <DependentUpon>201801112109496_Initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201801112057510_InitialCreate.resx">
+      <DependentUpon>201801112057510_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801112103458_Initial.resx">
+      <DependentUpon>201801112103458_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801112109496_Initial1.resx">
+      <DependentUpon>201801112109496_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

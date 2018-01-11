@@ -11,6 +11,7 @@ namespace ProductsLibrary
         public int ProductID { get; set; }
         public string ProductName { get; set; }
         public int UnitInStock { get; set; }
-        public Category Category { get; set; }
+        public string  CategoryName { get; set; }
+        public int CategoryID { get; set; }
     }
 }

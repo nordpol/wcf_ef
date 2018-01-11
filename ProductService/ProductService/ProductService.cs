@@ -8,7 +8,7 @@ namespace ProductsLibrary
         {
             using (var products = new ProductsContext())
             {
-                products.Products.Add(new Product() { ProductID = 6, ProductName = "C# 6 with Visual Studio", Category = new CategoriesLibrary.Category { CategoryID = 12, CategoryName = "Books"}, UnitInStock =  2});
+                products.Products.Add(new Product() { ProductID = 1, ProductName = "C# 6 with Visual Studio", CategoryID = 2, CategoryName = "books", UnitInStock = 100 });
                 products.SaveChanges();
             }
         }
@@ -17,7 +17,7 @@ namespace ProductsLibrary
         {
             using (var products = new ProductsContext())
             {
-                return products.Products.FirstOrDefault(x => x.ProductID == productID)?.Category.CategoryName;
+                return products.Products.FirstOrDefault(x => x.ProductID == productID)?.CategoryName;
             }
         }
 
