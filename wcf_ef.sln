@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CategoryService", "Category
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService", "ProductService\ProductService\ProductService.csproj", "{1A29E4F9-596B-438D-8EF1-C0EB04CC7973}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfClient", "WcfClient\WcfClient\WcfClient.csproj", "{BBC699D1-A935-4CF0-A66D-EFEAC5638BBA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A29E4F9-596B-438D-8EF1-C0EB04CC7973} = {1A29E4F9-596B-438D-8EF1-C0EB04CC7973}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +28,10 @@ Global
 		{1A29E4F9-596B-438D-8EF1-C0EB04CC7973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A29E4F9-596B-438D-8EF1-C0EB04CC7973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A29E4F9-596B-438D-8EF1-C0EB04CC7973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC699D1-A935-4CF0-A66D-EFEAC5638BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC699D1-A935-4CF0-A66D-EFEAC5638BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC699D1-A935-4CF0-A66D-EFEAC5638BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC699D1-A935-4CF0-A66D-EFEAC5638BBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +39,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4D626AB2-3B9A-4336-9A87-503A5C8DA1BD} = {525EE1BF-1636-4B77-B9C1-FC1E95301A5C}
 		{1A29E4F9-596B-438D-8EF1-C0EB04CC7973} = {525EE1BF-1636-4B77-B9C1-FC1E95301A5C}
+		{BBC699D1-A935-4CF0-A66D-EFEAC5638BBA} = {525EE1BF-1636-4B77-B9C1-FC1E95301A5C}
 	EndGlobalSection
 EndGlobal

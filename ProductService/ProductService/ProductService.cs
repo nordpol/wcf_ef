@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace ProductsLibrary
 {
@@ -10,6 +11,14 @@ namespace ProductsLibrary
             {
                 products.Products.Add(new Product() { ProductID = 1, ProductName = "C# 6 with Visual Studio", CategoryID = 2, CategoryName = "books", UnitInStock = 100 });
                 products.SaveChanges();
+            }
+        }
+
+        public int? GetCategoryID(int productID)
+        {
+            using (var products = new ProductsContext())
+            {
+                return products.Products.FirstOrDefault(x => x.ProductID == productID)?.CategoryID;
             }
         }
 

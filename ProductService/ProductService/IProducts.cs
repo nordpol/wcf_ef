@@ -16,5 +16,8 @@ namespace ProductsLibrary
 
         [OperationContract]
         void AddNewProduct();
+
+        [OperationContract]
+        int? GetCategoryID(int productID);
     }
 }
