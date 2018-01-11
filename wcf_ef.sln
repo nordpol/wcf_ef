@@ -22,6 +22,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfWForms", "WcfWForms\WcfW
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{5FBADF8D-C164-4527-AB28-0B6EB9E562DF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{65FAFF73-9168-4AB7-9ADD-CC1B68E918A7}"
+	ProjectSection(SolutionItems) = preProject
+		dbo.Categories.sql = dbo.Categories.sql
+		dbo.Products.sql = dbo.Products.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
